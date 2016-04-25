@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require lodash/lodash
 //= require angular
+//= require angular-simple-logger
+//= require angular-google-maps
 //= require_tree .

@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Petconnect</title>
-  <%= stylesheet_link_tag    'application' %>
-  <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag 'application' %>
+
   <%= csrf_meta_tags %>
 </head>
 <body class="container">
@@ -20,7 +20,11 @@
     </aside>
   <% end %>
 
-<%= yield %>
+  <script src='//maps.googleapis.com/maps/api/js'></script>
+  <%= javascript_include_tag 'application' %>
+  <%= render :partial => 'app/google_maps_app' %>
+
+  <%= yield %>
 
 </body>
 </html>
